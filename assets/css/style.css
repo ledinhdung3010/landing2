@@ -1,0 +1,2540 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #010101;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+    width: 10px; 
+ }
+
+html::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--theme-clr);
+  border-radius: 25px;
+}
+.object-fit-contain{
+    object-fit: contain;
+}
+.caveat{
+    font-family: "Caveat", system-ui;
+}
+.Passero{
+    font-family: "Passero One", sans-serif;
+}
+.italic {
+    font-style: italic;
+}
+:root {
+    --black-clr:#010101;
+    --white-clr: #fff;
+    --light-grey: #f1f1f1;
+    --light-white: #01010199;
+    --red-clr:#FF3A3A;
+    --red-clr1: #FF1717;
+    --red-clr2: #FC0113;
+    --red-clr3:#FF2C2C99;
+    --red-clr4:#FF0000;
+    --red-clr5:#FF361D;
+    --green-clr: #64FE4B;
+    --green-clr1:#49BF35;
+    --green-clr2: #00BE33;
+    --orange-clr: #FC884C;
+    --yellow-clr: #FEF900;
+    --yellow-clr1: #FCBC62;
+    
+    --purple-clr: #9347FF;
+    --blue-clr:#1D7EEB;
+    --brown-clr:#AF663D;
+    
+    --orange-clr-1: #FF8000;
+    --orange-clr1: #FFAA33;
+    --neon-clr: #31E3BE;
+    --grey-clr:#555555;
+    /* --green-clr2:green; */
+    --theme-gradient: linear-gradient(90deg, #FEF900 0%, #FEA500 100%);
+    --theme-gradient1: linear-gradient(90deg, #AB78F6 0%, #7B59FF 100%);
+    --theme-gradient2: linear-gradient(90deg, #102F5A 0%, #201656 100%);
+    --theme-clr: linear-gradient(88.48deg, #FD2222 4.74%, #FDC867 91.9%);
+}
+/* Color CSS */
+
+.black-clr {color: var(--black-clr)}
+.white-clr,
+a.white-clr {
+    color: var(--white-clr);
+}
+.light-grey{color: var(--light-grey);}
+.light-white{color: var(--light-white);}
+.neon-clr{
+    color: var(--neon-clr);
+}
+.purple-clr {color: var(--purple-clr);}
+.yellow-clr{color:var(--yellow-clr);}
+.yellow-clr1{color:var(--yellow-clr1);}
+.orange-clr{color:var(--orange-clr);}
+.orange-clr-1{color:var(--orange-clr-1);}
+.orange-clr1{color:var(--orange-clr1);}
+.red-clr{color:var(--red-clr);}
+.red-clr1{color:var(--red-clr1);}
+.red-clr2{color:var(--red-clr2);}
+.red-clr3{color:var(--red-clr3);}
+.red-clr4{color:var(--red-clr4);}
+.red-clr5{color:var(--red-clr5);}
+.blue-clr{color:var(--blue-clr);}
+.brown-clr{color:var(--brown-clr);}
+.grey-clr{color:var(--grey-clr);}
+.green-clr{color:var(--green-clr)}
+.green-clr1{color:var(--green-clr1)}
+.green-clr2{color:var(--green-clr2)}
+.theme-clr{
+    background: var(--theme-clr);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* hehading color start  */
+.clr-h1{
+    color: #FD86E8;
+}
+.clr-h2{
+    color: #FE9375;
+}
+.clr-h3{
+    color: #32FFE5;
+}
+.clr-h4{
+    color: #FD4845;
+}
+.clr-h5{
+    color: #FFFF48;
+}
+.clr-h6{
+    color: #5982FA;
+}
+/* hehading color end  */
+
+
+/* Responsive Video CSS */
+
+.responsive-video {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    /* border: 5px solid #A0D3FF; */
+    /* border: 1px solid rgba(255, 255, 255, 0.20); */
+    backdrop-filter: blur(10px);
+}
+
+.responsive-video iframe,
+.responsive-video object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Section Padding Start */
+
+.sec-pd{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media (min-width:768px){
+    .sec-md-pd{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Section Padding End */
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+
+/* sticky bar start */
+.fixed-top-bar {
+    background-color: transparent;
+    background-image: var(--theme-gradient2);
+    background: #000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99
+}
+/*.fixed-top-bar {*/
+/*   background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/fixed-top-bar.webp) no-repeat center center;*/
+/*    background-size: cover;*/
+/*    padding: 10px 0;*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    z-index: 99*/
+/*}*/
+.fixed-top-bar a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+    background-image: var(--theme-gradient);
+    border-radius: 5px 5px 5px 5px;
+    padding: 12px 9px 12px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    width: 100%;
+}
+/* stick bar end */
+
+a.cta-link-btn-1 {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 22px;
+    line-height: 160%;
+    color: #ffffff;
+    font-weight: 800;
+    transition: all .3s ease;
+    background: var(--theme-gradient);
+    border-radius: 10px;
+}
+a.cta-link-btn-1:hover {
+    border-radius: 8px;
+    background: var(--theme-gradient1);
+    color: #ffffff;
+}
+@media (min-width: 768px) {
+    a.cta-link-btn-1 {
+        font-size: 38px;
+        padding: 20px 86px;
+        display: inline-block;
+    }
+}
+/*  */
+
+/* typing-text start */
+.typing-text {
+    background: linear-gradient(180deg, #4C0515 0%, #4C2B13 100%);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 0px 20px;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .typing-text {
+        padding: 0px 0px 0px 50px;
+        width: 405px;
+        position: relative;
+    }
+    .typing-text::before {
+        position: absolute;
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/like-thumb.webp");
+        top: 0px;
+        left: -40px;
+    }
+    .typing-text::after {
+        position: absolute;
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/yellow-round-arrow.webp");
+        top: -55px;
+        right: -105px;
+    }
+}
+/* typing-text end */
+
+/* header section start */
+
+.theme-btn {
+    background: var(--theme-gradient);
+    padding: 15px 14px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.theme-btn:hover {
+    /* transition: all .3s ease;
+    background: var(--theme-gradient1); */
+    color: var(--black-clr) !important;
+}
+.theme-btn::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
+    background: linear-gradient(90deg, #FEA601 11.56%, #FDF700 90%);
+    color: #000;
+    border-radius: 0 0 40% 35%;
+}
+
+.header-sec{
+    background: #000000;
+    padding: 30px 0px;
+}
+.pre-head {
+    padding: 10px 15px;
+    background: #FC884C26;
+    border: 1px solid #FC884C4D;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    display: inline-block;
+}
+.post-head{
+    background: #000000;
+    border: 1px dashed #FC884C;
+    backdrop-filter: blur(20px);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+.header-ul{
+    background: #1D1B1C;
+    border-radius: 10px;
+    padding: 10px;
+}
+.price-text{
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/price-frame.webp") no-repeat;
+    background-size: 100% 100%;
+    padding: 0px 10px;
+    display: inline-block;
+}
+.red-frame-1 {
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/red-frame-1.webp") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 2px 15px;
+}
+.header-ul li {
+    list-style: none;
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/tick.webp") no-repeat;
+    background-position: 0px 5px;
+    padding: 0px 0px 20px 37px;
+}
+.header-ul li:last-child{
+    padding-bottom: 0 !important;
+}
+.blue-frame-2{
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/blue-frame-2.webp") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 2px 10px;
+}
+.exclusive-text{
+    background: #1D1B1C;
+    border: 1px dashed #FF3A3A;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 10px;
+}
+.main-head{
+    background: linear-gradient(135.03deg, rgba(253, 200, 103, 0.2) -5.56%, rgba(253, 34, 34, 0.2) 105.34%);
+    border: 1px solid #FC884C;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+@media(min-width:768px){
+    .header-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/header-bg.webp") no-repeat bottom center;
+        background-size: cover;
+        padding: 40px 0px 100px;
+    }
+    .pre-head {
+        padding: 20px 40px;
+        border-radius: 60px;
+    }
+    .main-head{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/main-head.webp") no-repeat;
+        background-size: 100%  100%;
+        border: unset;
+        backdrop-filter: unset;
+        padding: 20px 44px;
+    }
+    .header-ul{
+        padding: 20px 15px;
+    }
+    .orange-wave{
+        position: relative;
+    }
+    .orange-wave::before {
+        content: "";
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/orange-wave.webp") no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 8px;
+    }
+    .red-wave{
+        position: relative;
+    }
+    .red-wave::before{
+        position: absolute;
+        content: '';
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/red-wave.webp") no-repeat;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 8px;
+    }
+  
+    .post-head{
+        padding: 15px 24px;
+    }
+    .theme-btn {
+        padding: 22px 105px;
+    }
+
+    .wave-line{
+        position: relative;
+    }
+    .wave-line::after{
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/neon-wave.webp");
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+    }
+    .blue-frame-2{
+        padding: 2px 20px;
+    }
+    .exclusive-text{
+        padding: 15px 14px;
+    }
+}
+/* header section end */
+
+/* step sec start */
+.step-sec{
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(252, 136, 76, 0.4) 180%);
+}
+.step-text{
+    background: #FC884C1A;
+    border: 2px dashed #FC884C;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.step-card{
+    padding: 15px 15px 25px;
+    display: inline-block;
+    height: 100%;
+}
+
+.step-card-1 {
+    background: #D0F4FF;
+    border-radius: 10px;
+}
+.step-card-2{
+    background: #EDE5F7;
+    border-radius: 10px;
+}
+.step-card-3{
+    background: #D6F0D5;
+    border-radius: 10px;
+}
+@media (min-width:768px) {
+    .step-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/step-bg.webp") no-repeat bottom center;
+        background-size: cover;
+    }
+    .step-text{
+        padding: 0px 20px;
+    }
+    .step-card {
+        padding: 0px 25px 25px;
+        border: unset;
+        border-radius: unset;
+    }
+    .step-card img{
+        margin-top: -25px;
+    }
+    .step-card-1{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/step-card-1.webp") no-repeat;
+        background-size: 100% 100%;
+    }
+    .step-card-2{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/step-card-2.webp") no-repeat;
+        background-size: 100% 100%;
+    }
+    .step-card-3{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/step-card-3.webp") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+@media (max-width:767px) {
+    .step-img{
+        max-height: 50px;
+    }
+}
+/* step sec end */
+
+/* cta-border-sec start */
+.cta-btn-bg {
+    background: #0f0808;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.cta-btn-border {
+    border: 3px dashed #000000;
+    border-radius: 10px;
+    padding: 0px;
+}
+@media (min-width: 768px) {
+    .cta-btn-bg {
+        background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/cta-btn-border.webp) no-repeat center center;
+        background-size: 100% 100%;
+        padding: 70px 23px;
+        border-radius: 10px;
+    }
+    .cta-btn-border {
+        border-radius: 13px;
+        padding: 0px;
+    }
+}
+/* cta-border-sec end */
+
+/* learning-sec start */
+.learning-sec{
+    background: #ffffff;
+}
+.orange-box{
+    background: #FFF3ED;
+    border: 4px dashed #FC884C;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+}
+.orange-round{
+    background: #F5F9FF;
+    border: 4px dashed #4C8AFC;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+@media (min-width: 768px) {
+    .learning-sec{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/learning-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .orange-box{
+        border-radius: 0px 20px 0px 20px;
+        padding: 12px 100px;
+        position: relative;
+    }
+    .orange-box::before {
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/star-emoji.webp);
+        position: absolute;
+        top: 35px;
+        left: -60px;
+    }
+    .orange-box::after{
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/star-emoji.webp);
+        position: absolute;
+        top: 35px;
+        right: -60px;
+    }
+    .orange-round{
+        padding: 1px 40px;
+    }
+    .orange-wave-3{
+        position: relative;
+    }
+    .orange-wave-3::after {
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/orange-wave-3.webp);
+        position: absolute;
+        bottom: -15px;
+        right: 0px;
+    }
+}
+/* learning-sec end */
+
+/* shorts-sec start */
+.shorts-sec{
+    background: #FDECDF;
+}
+.blue-round{
+    background: #FFF3ED;
+    border: 4px dashed #FC884C;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+@media (min-width: 768px) {
+    .shorts-sec{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/shorts-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .blue-round{
+        padding: 1px 40px;
+    }
+}
+/* shorts-sec end */
+
+/* fruit-sec start */
+.fruit-sec{
+    background: #ffffff;
+    padding: 40px 0 100px;
+}
+.fruit-text{
+    background: #F5F9FF;
+    border: 4px dashed #4C8AFC;
+    padding: 7px 20px;
+    display: inline-block;
+    border-radius: 100px;
+}
+@media (min-width: 768px) {
+    .fruit-sec{
+        padding: 100px 0;
+    }
+    .fruit-text{
+        padding: 7px 70px;
+    }
+}
+/* fruit-sec end */
+
+/* avatar-sec start */
+.avatar-sec{
+    background: #E4EEFFE5;
+}
+@media (min-width: 768px) {
+    .avatar-sec{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/avatar-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+}
+/* avatar-sec end */
+
+/* avatar-sec-1 start */
+.avatar-sec-1{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFDCCA 100%);
+}
+@media (min-width: 768px) {
+    .avatar-sec-1{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/avatar-bg-1.webp") no-repeat center center;
+        background-size: cover;
+    }
+}
+/* avatar-sec-1 end */
+
+/* funny-sec start */
+.funny-sec{
+    background: #ffffff;
+}
+/* .funny-text {
+    background: #F5F9FF;
+    border: 4px dashed #4C8AFC;
+    padding: 7px 20px;
+    display: inline-block;
+    border-radius: 100px;
+} */
+@media (min-width: 768px) {
+    .funny-sec{
+        background: #ffffff url("https://cdn.oppyotest.com/launches/shortbeastai/special/funny-bg.webp") no-repeat top center;
+        background-size: cover;
+    }
+    /* .funny-text {
+        padding: 14px 90px 14px 50px;
+        position: relative;
+    }
+   .funny-text::after {
+        position: absolute;
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/funny-emoji.webp);
+        top: -10px;
+        right: -50px;
+    } */
+}
+/* funny-sec end */
+
+/* catalog-sec start */
+.catalog-sec{
+    background: #E4EEFFE5;
+}
+@media (min-width: 768px) {
+    .catalog-sec{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/catalog-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+}
+/* catalog-sec end */
+
+/* quote-sec start */
+.quote-sec{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFDCCA 100%);
+}
+@media (min-width: 768px) {
+    .quote-sec{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/quote-bg.webp") no-repeat bottom center;
+        background-size: cover;
+    }
+}
+/* quote-sec end */
+
+/* template-sec start */
+.template-sec{
+    background: #ffffff;
+}
+.template-text{
+    background: #49BF3533;
+    border: 1px dashed #49BF35;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+}
+@media (min-width: 768px) {
+    .template-sec{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/template-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .template-text{
+        padding: 20px 40px;
+        position: relative;
+    }
+   .template-text::after {
+        position: absolute;
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/star-emoji-2.webp);
+        top: -10px;
+        right: -75px;
+    }
+}
+/* template-sec end */
+
+/* earning-sec start */
+.earning-sec{
+    background: #ffffff;
+}
+.earning-text{
+    background: #FFF3ED;
+    border: 1px dashed #FC884C;
+    padding: 0px 15px;
+    display: inline-block;
+    border-radius: 20px;
+}
+@media (min-width: 768px) {
+    .earning-sec{
+        background:  url("https://cdn.oppyotest.com/launches/shortbeastai/special/earning-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .earning-text{
+        padding: 0px 28px;
+    }
+}
+/* earning-sec end */
+
+/*freelancer sec start */
+.freelancer-sec{
+    background: #000000;
+}
+.freelancer-text{
+    background: #3D2D25;
+    border: 2px dashed #FCBC62;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+@media (min-width: 768px) {
+    .freelancer-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/freelancer-bg.webp") no-repeat top center;
+        background-size: cover;
+        padding-top: 180px;
+    }
+    .theme-line{
+        position: relative;
+    }
+    .theme-line::after {
+        position: absolute;
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/theme-line.webp");
+        bottom: -25px;
+        left: -10px;
+    }
+    .freelancer-text{
+        padding: 7px 23px;
+    }
+}
+/* freelancer  sec end */
+
+/* profit-sec start */
+.profit-sec{
+    background: #000000;
+}
+.profit-text{
+    background: linear-gradient(180deg, #FC0013 0%, #FC0013 100%);
+    border: 2px dashed #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0px 10px;
+}
+.profit-box{
+    background: #110A0766;
+    box-shadow: 0px 0px 40px 0px #FC884C4D;
+    border-radius: 10px;
+    /* display: inline-block; */
+    padding: 20px 5px;
+}
+.profit-inner-text{
+    background: #00000033;
+    border: 1px dashed #FFFFFF;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
+}
+@media (min-width: 768px) {
+    .profit-sec {
+        background: #000000 url(https://cdn.oppyotest.com/launches/shortbeastai/special/profit-bg.webp) no-repeat bottom center;
+        background-size: cover;
+    }
+    .profit-text{
+        padding: 0px 15px;
+    }
+    .yellow-wave{
+        position: relative;
+    }
+    .yellow-wave::after{
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/yellow-wave.webp");
+        position: absolute;
+        bottom: -20px;
+        left: -5px;
+    }
+    .profit-box{
+        padding: 50px 0;
+    }
+    .profit-inner-text{
+        padding: 28px 0;
+    }
+}
+/* profit-sec end */
+
+/* saves sec start */
+.saves-sec{
+    background: #ffffff;
+}
+.red-box{
+    border-radius: 10px;
+    background: #FFEAEA;
+    /* border: 1px solid #3A3A3A; */
+    padding: 10px;
+}
+.blue-box{
+    border-radius: 10px;
+    background: linear-gradient(135.03deg, rgba(253, 200, 103, 0.1) -5.56%, rgba(253, 34, 34, 0.1) 105.34%);
+    border: 2px solid #FC884C;
+    padding: 10px;
+}
+.one-time-text{
+    background: var(--theme-clr);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+}
+.saves-text{
+    background: #FC0013;
+    border: 2px dashed #FFFFFF;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0px 15px;
+}
+@media (min-width: 768px) {
+    /* .saves-sec{
+        background: #191932 url(https://cdn.oppyotest.com/launches/shortbeastai/special/saves-bg.webp) no-repeat center center;
+        background-size: cover;
+    } */
+    .saves-text{
+        padding: 0 30px;
+    }
+    .red-box{
+        padding: 20px;
+    }
+    .blue-box{
+        padding: 25px 20px 20px;
+        height: 100%;
+    }
+}
+/* saves sec end */
+
+/* industry-sec start */
+
+.industry-sec{
+    background: linear-gradient(107.56deg, #FFF1E4 0%, #FFDCCA 100%);
+}
+.industry-text{
+    background: #ffffff;
+    border: 2px dashed #FC884C;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+.ind-box1{
+    background: #FFFFFF;
+    border: 2px solid #FC884C;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+}
+.ind-box2{
+    background: #FFFFFF;
+    border: 2px solid #FC884C;
+    padding: 20px 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+@media (min-width:768px){
+    .industry-sec{
+        background: #FFDCCA url(https://cdn.oppyotest.com/launches/shortbeastai/special/industry-bg.webp) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .industry-text{
+        padding: 0px 20px;
+    }
+    .ind-box1{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/fe-frame-1.webp") no-repeat;
+        background-size: 100% 100%;
+        border: unset;
+        border-radius: unset;
+        padding: 50px;
+    }
+    .ind-box2{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/fe-frame-2.webp") no-repeat;
+        background-size: 100% 100%;
+        border: unset;
+        border-radius: unset;
+        padding: 40px 30px;
+    }
+}
+/* industry-sec end */
+
+/* without-sec start */
+.without-sec{
+    background: #ffffff;
+}
+.without-text{
+    background: #FFFFFF;
+    border: 1px dashed var(--red-clr);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+.without-box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid var(--red-clr);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.without-box1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 2px solid var(--red-clr);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+@media (min-width: 768px) {
+    .without-sec {
+        background: #ffffff url(https://cdn.oppyotest.com/launches/shortbeastai/special/without-bg.webp) no-repeat center center;
+        background-size: cover;
+    }
+    .without-text{
+        padding: 5px 20px;
+    }
+    .without-box{
+        padding: 15px;
+        min-height: 67px;
+    }
+    .without-box1{
+        padding: 28px 15px;
+        min-height: 67px;
+    }
+}
+/* without-sec end */
+
+/* viral-sec start */
+.viral-sec{
+    background: #FC884C1A;
+}
+.viral-text, .viral-text-1{
+    background: #FFFFFF;
+    border: 2px dashed #FC884C;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+.viral-box{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+}
+.viral-1{
+    border-top: 1px solid #4576E3;
+    border-right: 5px solid #4576E3;
+    border-bottom: 5px solid #4576E3;
+    border-left: 1px solid #4576E3;
+}
+.viral-2{
+    border-top: 1px solid #E54F57;
+    border-right: 5px solid #E54F57;
+    border-bottom: 5px solid #E54F57;
+    border-left: 1px solid #E54F57;
+}
+.viral-3{
+    border-top: 1px solid #2B62CA;
+    border-right: 5px solid #2B62CA;
+    border-bottom: 5px solid #2B62CA;
+    border-left: 1px solid #2B62CA;
+}
+.viral-money{
+    background: #C3FF6E;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .viral-sec {
+        background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/viral-bg.webp) no-repeat center center;
+        background-size: cover;
+    }
+    .viral-text{
+        padding: 5px 25px;
+    }
+    .viral-text-1{
+        padding: 0 78px 0 25px;
+        position: relative;
+    }
+    .viral-money::after {
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/cash-icon.webp");
+        position: absolute;
+        top: -20px;
+        right: -75px;
+    }
+    .viral-box{
+        padding: 20px 20px 38px;
+    }
+    .viral-money{
+    padding: 0px 59px 0px 25px;
+
+}
+}
+/* viral-sec end */
+
+/* choice sec start */
+.choice-sec{
+    background: #fff;
+}
+.choicebox-1{
+    background: #FF5E4A;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.choicebox-2{
+    background: #3CB006;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    height: 100%;
+}
+.choicetext-1{
+    background: #FFFFFF;
+    padding: 15px 82px;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.choise-list li{
+    list-style: none;
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/choice-cross.webp") no-repeat;
+    background-position: 0px 5px;
+    padding: 0px 0px 20px 37px;
+}
+.choise-list-1 li{
+    list-style: none;
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/choice-right.webp") no-repeat;
+    background-position: 0px 5px;
+    padding: 0px 0px 20px 37px;
+}
+/* .choise-list li:nth-last-child(1), .choise-list-1 li:nth-last-child(1){
+    background: none;
+    background-position: unset;
+} */
+@media (min-width: 768px) {
+    .choice-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/choice-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .choicebox-1{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/choicebox-1.webp") no-repeat;
+        background-size: 100% 100%;
+        padding: 40px 30px 85px;
+        box-shadow: none;
+    }
+    .choicebox-2{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/choicebox-2.webp") no-repeat;
+        background-size: 100% 100%;
+        padding: 40px 30px 85px;
+        box-shadow: none;
+    }
+    .choise-bottom{
+        position: relative;
+    }
+    .choise-bottom::after{
+        position: absolute;
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/choise-bottom.webp");
+        bottom: -10px;
+        left: 0px;
+    }
+}
+/* choice sec end */
+
+/* warning section start */
+.warning-section{
+    background: #180903;
+}
+.warning-card{
+    background: #fff;
+    border: 5px dotted #FF361D;
+    border-radius: 20px;
+    padding: 0px 10px 10px;
+}
+.warning-shape{
+    background: #FF361D;
+    border-radius: 41px;
+    padding: 0px 36px 8px;
+    display: inline-block;
+    margin-top: -20px;
+}
+@media (min-width: 768px) {
+    .warning-section{
+        background: #180903 url(https://cdn.oppyotest.com/launches/shortbeastai/special/warning-bg.webp) no-repeat bottom center;
+        background-size: cover;
+    }
+    .warning-card{
+        padding: 0px 35px 40px;
+        position: relative;
+    }
+    .warning-shape{
+        margin-top: -40px;
+    }
+}
+/* warning section end */
+
+/* star-sec start */
+.star-sec{
+    background: #ffffff;
+}
+.star-text{
+    background: #00BE331A;
+    border: 2px dashed #00BE33;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+}
+.star-list li {
+    list-style: none;
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/star-list.webp") no-repeat;
+    background-position: 0px 2px;
+    padding: 0px 0px 20px 35px;
+}
+.star-box{
+    border-radius: 15px;
+    padding: 10px;
+}
+.star-1{
+    background: #2560E01A;
+    backdrop-filter: blur(50px);
+    border-top: 1px solid #4576E3;
+    border-right: 5px solid #4576E3;
+    border-bottom: 5px solid #4576E3;
+    border-left: 1px solid #4576E3;
+}
+.star-2{
+    background: #7EB0351A;
+    backdrop-filter: blur(50px);
+    border-top: 1px solid #7EB42C;
+    border-right: 5px solid #7EB42C;
+    border-bottom: 5px solid #7EB42C;
+    border-left: 1px solid #7EB42C;
+}
+.star-3{
+    background: linear-gradient(135.03deg, rgba(253, 200, 103, 0.1) -5.56%, rgba(253, 34, 34, 0.1) 105.34%);
+    backdrop-filter: blur(50px);
+    border-top: 1px solid #FD2222;
+    border-right: 5px solid #FD2222;
+    border-bottom: 5px solid #FD2222;
+    border-left: 1px solid #FD2222;
+}
+
+@media (min-width: 768px) {
+    .star-sec{
+        background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/star-bg.webp) no-repeat bottom center;
+        background-size: cover;
+    }
+    .star-text{
+        padding: 0px 26px;
+    }
+    .star-list li {
+    padding: 0px 0px 30px 35px;
+    }
+        .star-box{
+        padding: 20px 20px 38px;
+    }
+}
+/* star-sec end */
+
+/* creator-sec start */
+.creator-sec{
+    background: #FDECDF;
+}
+.creator-text {
+    background: #ffffff;
+    border: 4px dashed #FC884C;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .creator-sec{
+        background: #FDECDF url(https://cdn.oppyotest.com/launches/shortbeastai/special/creator-bg.webp) no-repeat top center;
+        background-size: cover;
+    }
+    .creator-text {
+        border-radius: 0px 50px 0px 50px;
+        padding: 21px 66px 24px;
+    }
+    /* .orange-wave{
+        position: relative;
+    }
+    .orange-wave::after {
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/orange-wave.webp);
+        position: absolute;
+        bottom: -15px;
+        right: 0px;
+    } */
+}
+/* creator-sec end */
+
+/* expensive-section start */
+.expensive-section{
+    background: linear-gradient(180deg, #FFF1F1 0%, #FFF1F1 97.68%);
+}
+.expensive-text{
+    background: #FC0113;
+    border-radius: 8px;
+    border: 2px dashed #FFFFFF;
+    display: inline-block;
+    padding: 0 10px;
+}
+.ex-card {
+    background: #FFF1F1;
+    border: 1px solid #FC0113;
+    border-radius: 20px;
+    padding: 20px 15px;
+}
+@media(min-width:768px){
+    .expensive-section{
+        background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/expensive-bg.webp) no-repeat bottom center;
+        background-size: cover;
+        padding: 120px 0 137px;
+    }
+    .ex-sec{
+        padding: 50px 0 100px;
+    }
+    .expensive-text{
+        padding: 0 42px 0 18px;
+        position: relative;
+    }
+   .expensive-text::after {
+        position: absolute;
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/think-emoji.webp");
+        top: -22px;
+        right: -25px;
+    }
+    .ex-card {
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/ex-card.webp") no-repeat;
+        background-size: 100% 100%;
+        border-radius: unset;
+        border: unset;
+        padding: 50px 40px;
+    }
+}
+/* expensive-section end */
+
+/* scary sec start */
+.scary-sec{
+  background: #FDECDF;
+}
+.blue-brush{
+    background: #FC884C;
+    border: 2px dashed #FFFFFF;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+.scary-box{
+    background: #FFFFFF;
+    border: 1px solid #FC0113;
+    box-shadow: 0px 5px 20px 0px #00000026;
+    border-radius: 100px;
+    padding: 20px 14px 20px 15px;
+    align-content: center;
+    height: 100%;
+}
+.scary-text{
+    background: #00BE331A;
+    border: 1px dashed #00BE33;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0px 12px;
+}
+@media(min-width:768px){
+    .scary-sec{
+        background: #FDECDF url("https://cdn.oppyotest.com/launches/shortbeastai/special/scary-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .blue-brush{
+        padding: 10px 41px 10px 141px;
+        position: relative;
+    }
+    .blue-brush::before{
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/star-face-emoji.webp);
+        position: absolute;
+        top: -12px;
+        left: 30px;
+    }
+}
+
+/* scary sec end */
+
+/* presenting-sec start */
+.presenting-sec{
+    background: #000000;
+}
+.presenting-head{
+    border-radius: 30px;
+    background: #FFFFFF;
+    border: 1px solid #FC884C;
+    display: inline-block;
+    padding: 8px 26px;
+}
+
+.post-white-box {
+    background: #ffffff;
+    padding: 5;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.main-text {
+    background: #1C0B03;
+    border: 1px solid #FC884C;
+    border-radius: 10px;
+    transform: skewX(-10deg);
+    display: inline-block;
+    padding: 0px 15px;
+}
+.proms-text-1 {
+    background: #FFFFFF26;
+    border: 1px solid #FFFFFF4D;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 13px;
+}
+.proms-text-2 {
+    background: #FC884C26;
+    border: 1px solid #FC884C4D;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 13px;
+}
+@media (min-width: 768px) {
+    .presenting-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/presenting-bg.webp") no-repeat bottom center;
+        background-size: cover;
+        padding: 100px 0px 160px;
+        position: relative;
+    }
+     .presenting-head{
+        background:  url(https://cdn.oppyotest.com/launches/shortbeastai/special/presenting-frame.webp) no-repeat;
+        background-size: 100% 100%;
+        border-radius: unset;
+        border: unset;
+        padding: 9px 59px 17px;
+      }
+      .post-white-box{
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+    .main-text {
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/main-text-frame.webp") no-repeat;
+        background-size: 100% 100%;
+        padding: 0px 25px;
+        display: inline-block;
+        transform: unset;
+        border: unset;
+        border-radius: unset;
+    }
+}
+/* presenting-sec end */
+
+/* step-2 sec start */
+.step-section {
+    background: #FDECDF;
+}
+.steps-frame {
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/steps-frame.webp) no-repeat;
+    background-size: 100% 100%;
+    padding: 6px 21px 12px 21px;
+    display: inline-block;
+    margin-top: -26px;
+}
+
+.step-card-11 {
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/step-card-11.webp) no-repeat;
+    background-size: 100% 100%;
+    padding: 30px 30px 50px 35px;
+}
+
+/*  */
+.heading-tabs:not(.collapsed) .steps-icon{
+    border-color: #FFB48E;
+}
+.steps-card .steps-icon{
+    min-width: 80px;
+    min-height: 80px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: white;
+    fill: white;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.steps-tabs{
+    overflow: hidden;
+}
+.steps-card{
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid transparent;
+}
+/* .step-text{
+    background: #459AFA;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+} */
+ .step-text {
+    background: #FC884C1A;
+    border: 1px dashed #FC884C;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+@media (min-width: 768px) {
+    .step-section{
+        background: #FDECDF url("https://cdn.oppyotest.com/launches/shortbeastai/special/step-sec-bg-1.webp") no-repeat center center;
+        background-size: cover;
+        margin-top: -90px;
+        padding-top: 170px;
+    }
+    .steps-frame {
+        padding: 6px 20px 12px 23px;
+        margin-top: -7px;
+    }
+    .step-card-11,.step-card-22,.step-card-33 {
+        padding: 40px 35px 60px 42px;
+    }
+    .step-text {
+        padding: 0px 10px;
+    }
+    .green-wave{
+        position: relative;
+    }
+    .green-wave::before{
+        position: absolute;
+        content: '';
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/green-wave.webp") no-repeat;
+        bottom: -4px;
+        left: 10px;
+        width: 100%;
+        height: 8px;
+    }
+}
+    /*  */
+.steps-card p{
+    color: rgba(25, 25, 25, 0.7);
+}
+
+.steps-card{
+    transition: all .8s ease-in-out;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #FCA358;
+    /* background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/step-frame.webp") no-repeat;
+    background-size: 100% 100%; */
+    padding: 40px 30px;
+}
+.heading-tabs{
+    background: transparent; 
+    border: none;
+    outline: none;
+    padding: 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cleint-frame {
+    border: 5px solid #FCA358;
+    border-radius: 12px;
+}
+/* step-2 sec end */
+
+/* demo section start */
+.demo-sec{
+    background: #ffffff;
+}
+.border-frame {
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/border-frame.webp) no-repeat;
+    background-size: 100% 100%;
+    padding: 26px 2px 2px 1px;
+}
+.tons-border {
+    border-radius: 15px;
+    background: #FC884C1A;
+    backdrop-filter: blur(20px);
+    border: double 1px var(--orange-clr);
+    display: flex;
+    padding: 15px 10px;
+    gap: 15px;
+    align-items: center;
+}
+@media(min-width:768px){
+    .demo-sec{
+        background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/demo.webp) no-repeat center center;
+        background-size: cover;
+    }
+    .border-frame {
+        padding: 73px 6px 5px;
+    }
+    .tons-border {
+        padding: 15px;
+    }
+}
+/* demo section end */
+
+/* rest-sec start */
+.rest-sec{
+    background: #ffffff;
+}
+.blue-frame{
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/blue-frame.webp") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 0 12px;
+}
+.rest-box{
+    background: #FFFFFF;
+    border: 2px solid #00CA2C;
+    padding: 10px 12px;
+    border-radius: 100px;
+    display: inline-block;
+}
+.rest-box-1{
+    background: #FFFFFF;
+    border: 2px solid #00CA2C;
+    padding: 10px 12px;
+    border-radius: 100px;
+    display: inline-block;
+}
+@media(min-width:768px){
+    .rest-sec{
+        background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/rest-bg.webp) no-repeat bottom center;
+        background-size: cover;
+    }
+    .rest-box{
+        padding: 12px 22px 12px 38px;
+        position: relative;
+    }
+    .rest-box::before{
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/green-right.webp");
+        position: absolute;
+        top: 18px;
+        left: -20px;
+    }
+    .rest-box-1{
+        padding: 12px 46px 12px 22px;
+        position: relative;
+    }
+    .rest-box-1::after{
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/green-right.webp");
+        position: absolute;
+        top: 18px;
+        right: -20px;
+    }
+}
+/* rest-sec end */
+
+/* cta btn section start */
+.cta-section {
+    background: #000000;
+}
+
+@media (min-width: 768px) {
+    .cta-section {
+        background: #000000 url(https://cdn.oppyotest.com/launches/shortbeastai/special/cta-bg.webp) no-repeat center center;
+        background-size: cover;
+    }
+    .cta-text{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/cta-frame.webp") no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        padding: 9px 41px;
+    }
+}
+/* cta btn section end */
+
+/* limited time section start */
+.limited-time-sec {
+    padding: 10px 0px 10px 0px;
+    background: #FF2C2C;
+}
+/* limited time section end */
+
+/* income sec start */
+.income-sec{
+    background: #000000;
+}
+.incom-box{
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/income-box.webp) no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    /* height: 100%; */
+}
+
+@media(min-width:768px){
+    .income-sec{
+        background: #000000 url("https://cdn.oppyotest.com/launches/shortbeastai/special/income-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .incom-box{
+        padding: 20px;
+    }
+}
+/* income sec end */
+
+/* freelancer-sec-1 start */
+.freelancer-sec-1 {
+    background: #FDECDF;
+}
+.freelancer-text-1 {
+    background: linear-gradient(134.97deg, #FDC867 -5.56%, #FD2222 105.33%);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+@media(min-width:768px){
+    .freelancer-sec-1 {
+        background: #FDECDF url(https://cdn.oppyotest.com/launches/shortbeastai/special/freelancer-bg-1.webp) no-repeat center center;
+        background-size: cover;
+    }
+    .freelancer-text-1 {
+        padding: 15px 25px;
+    }
+    .theme-line-1{
+        position: relative;
+    }
+    .theme-line-1::after {
+        position: absolute;
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/theme-line-1.webp");
+        bottom: -32px;
+        left: -10px;
+    }
+}
+/* freelancer-sec-1 end */
+
+/* crazy sec start */
+.crazy-sec{
+    background: #ffffff;
+}
+.crazy-text{
+    background: #4C8AFC;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .crazy-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/crazy-bg.webp") no-repeat bottom center;
+        background-size: cover;
+    }
+    .crazy-text{
+        padding: 10px 55px 10px 20px;
+    }
+    .crazy-text::after{
+        content: url(https://cdn.oppyotest.com/launches/shortbeastai/special/cool-1.webp);
+        position: absolute;
+        top: 0px;
+        right: -60px;
+    }
+    .red-wave-2{
+        position: relative;
+    }
+    .red-wave-2::after {
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/blue-border-1.webp");
+        content: "";
+        position: absolute;
+        height: 8px;
+        width: 100%;
+        bottom: 0px;
+        right: 0px;
+    }
+
+}
+/* crazy sec end */
+
+/* social-sec start */
+.social-sec{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFDCCA 100%);
+}
+.social-card{
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/social-card.webp) no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    height: 100%;
+}
+@media (min-width: 768px) {
+    .crazy-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/crazy-bg.webp") no-repeat bottom center;
+        background-size: cover;
+    }
+    .social-card{
+        padding: 20px 30px 25px;
+    }
+}
+/* social-sec end */
+
+/*compare section start*/
+.compare-section{
+    background: #fff;
+}
+
+.winning-box{
+    padding: 36px 110px;
+    border-top: 1px solid #378E00;
+    border-left: 1px solid #378E00;
+    border-right: 1px solid #378E00;
+    border-width: 1px, 0px, 1px, 1px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: #378E00;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: -5px 4px 30px 0px #00000026;
+    margin-top: -24px;
+}
+.compare-list-1{
+    box-shadow: -5px 4px 30px 0px #00000026;
+    border-radius: 0px 0px 0px 20px;
+}
+.compare-list-1 li {
+    list-style: none;
+    text-align: left;
+    padding: 25px 25px 25px 70px;
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/happy-tick.webp") no-repeat;
+    background-position: 23px 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid #378E00;
+    background-color: #FFFFFF;
+}
+.compare-list-1 li:nth-child(odd){  
+    background-color: #E6FFC7;
+}
+.compare-list-1 li:last-child{
+     border-bottom: 1px solid #378E00;
+    /*background-image: none;
+    padding-top: 45px; */
+    border-radius: 0px 0px 0px 20px;
+}
+.losing-box {
+    padding: 24px 110px;
+    background: #FF361D;
+    border: 1px solid #FF361D;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px 20px 0px 0px;
+    /* margin-top: -71px; */
+}
+.compare-list-2 li{
+    list-style: none;
+    text-align: left;
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/sad-tick.webp") no-repeat;
+    background-position: 23px 25px;
+    padding: 25px 41px 25px 65px;
+    border-right: 1px solid #FF361D;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #FCDDDA;
+    
+}
+.compare-list-2 li:nth-child(even){  
+    background-color: #FFEBE9;
+}
+/* .compare-list-2 li:nth-child(3){
+    padding: 38px 41px 38px 65px;
+    background-position: 23px 36px;
+} */
+.compare-list-2 li:last-child{
+    border-radius: 0px 0px 20px 0px;
+    border-bottom: 1px solid #FF361D;
+    padding: 25px 30px 25px 65px;
+}
+@media (min-width:768px) {
+    .compare-section{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/compare-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    
+}
+@media (max-width: 1124px) {
+    .table-1 {
+        overflow-x: scroll;
+        /* padding: 0px 15px; */
+    }
+    .table-1>div{
+        width:1170px;
+        /* overflow-x: scroll; */
+    }
+}
+
+/* compare section end */
+
+/* fear sec start */
+.fear-sec{
+    background: linear-gradient(180deg, #FFDCCA 0%, #FFFFFF 100%);
+}
+.fair-text {
+    border: 2px solid #FF361D;
+    background: #ffffff;
+    border-radius: 20px;
+    color: #FF2C2C;
+    display: inline-block;
+    padding: 0px 58px;
+}
+.theme-brush {
+    background: #FF2C2C;
+    border: 2px dashed #FFFFFF;
+    border-radius: 10px;
+    padding: 1px 20px;
+}
+@media (min-width: 768px) {
+    .fear-sec{
+        background: #ffffff url(https://cdn.oppyotest.com/launches/shortbeastai/special/fair-bg.webp) no-repeat top center;
+        background-size: cover;
+    }
+    .fair-text{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/fair-frame.webp") no-repeat;
+        background-size: 100% 100%;
+        border-radius: unset;
+        border: unset;
+        padding: 0px 30px;
+    }
+    .theme-brush {
+        padding: 1px 30px;
+    }
+}
+/* fear sec end */
+
+/* stress-free-sec start */
+.stress-free-sec{
+    background: #ffffff;
+}
+.stress-free-head{
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    background: #FC884C;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 5px 15px 0px #FC884C80;
+}
+.stress-free-head2{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #1D7EEB1A;
+    border: 1px dashed #1D7EEB;
+    backdrop-filter: blur(10px);
+}
+@media (min-width: 768px) {
+    .stress-free-sec{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/stress-free-sec-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+    .stress-free-head{
+        background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/stress-free-head.webp") no-repeat;
+        background-size: 100% 100%;
+        padding: 12px 109px 25px 90px;
+        border: unset;
+        box-shadow: unset;
+    }
+    .stress-free-head::after {
+        content: url("https://cdn.oppyotest.com/launches/shortbeastai/special/tounge-emoji.webp");
+        position: absolute;
+        top: -18px;
+        right: -30px;
+    }
+    .stress-free-head2{
+        border-radius: 20px;
+        padding: 15px 30px;
+    }
+}
+/* stress-free-sec end */
+
+/* bonusess-sec start */
+.bonusess-sec{
+    background: #181c38;
+}
+@media (min-width: 768px) {
+    .bonusess-sec{
+        background: #ffffff url("https://cdn.oppyotest.com/launches/shortbeastai/special/bonusses-bg.webp") no-repeat bottom center;
+        background-size: cover;
+        padding: 50px 0px 100px;
+    }
+}
+/* bonusess-sec end */
+
+/* bonus sec start */
+.bonus-sec {
+    background: #ffffff;
+}
+.bonus-section-shape {
+    /* display: inline-block; */
+    border-radius: 10px;
+    border: 2px solid #FC884C;
+    background: #FC884C1A;
+    height: 100%;
+    padding: 20px;
+}
+
+.margin-t-30 {
+    margin-top: -30px;
+}
+.bonus-headline-top {
+    padding: 4px 55px;
+    display: inline-block;
+    text-align: center;
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/bonus-head.webp) no-repeat center center;
+    background-size: 100% 100%;
+}
+@media (min-width: 768px){
+    .margin-t-78 {
+        margin-top: -66px;
+    }
+    .bonus-section-shape {
+        padding: 55px 30px 30px;
+    }
+}
+/* bonus sec end */
+
+/* cost sec start */
+.cost-text {
+    background: url("https://cdn.oppyotest.com/launches/shortbeastai/special/everyone-frame.webp") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 0px 3px 0px 20px;
+}
+
+/* cost sec end */
+
+
+/* moneyback sec start */
+.moneyback-sec{
+    background: #FDECDF;
+}
+@media (min-width:768px) {
+    .moneyback-sec{
+        background: #FDECDF url("https://cdn.oppyotest.com/launches/shortbeastai/special/moneyback-bg.webp") no-repeat center center;
+        background-size: cover;
+    }
+}
+/* moneyback sec end */
+
+/* ticking sec start */
+.ticking-sec{
+    background: #FDECDF;
+}
+.ticking-text{
+    background: var(--orange-clr);
+    border: 2px dashed #FFFFFF;
+    border-radius: 10px;
+    padding: 0px 20px;
+    display: inline-block;
+}
+/* ticking sec end */
+
+/* faq sec start */
+.faq-section {
+    padding: 30px 0px;
+    background: #FDECDF;
+}
+.faq-list {
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/faq-icon.webp) no-repeat top left;
+    background-color: #ffffff;
+    padding: 20px 15px 20px 55px;
+    background-position: 15px 25px;
+    border: 1px solid var(--orange-clr);
+    border-radius: 20px;
+}
+@media (min-width: 768px){
+    .faq-section {
+        padding: 100px 0px;
+    }
+}
+/* faq sec end */
+
+/* final-call start */
+.cta-section-white {
+    background: #ffffff;
+    padding: 30px 0;
+}
+.final-text{
+    background: #FC884C;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 5px 15px 0px #fc884c61;
+    border-radius: 10px;
+    padding: 0px 20px;
+    display: inline-block;
+}
+@media (min-width: 768px){
+    .cta-section-white {
+        background: #ffffff url(https://cdn.oppyotest.com/launches/shortbeastai/special/rest-bg.webp) no-repeat bottom center;
+        background-size: cover;
+        padding: 80px 0px;
+    }
+}
+/* final-call end */
+
+/* pricing tabel start */
+.pricing-section {
+    background: #000000;
+}
+.table-wrap {
+    background: #ffffff;
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    /* border: solid 1px #cacaca; */
+    overflow: hidden;
+    box-shadow: 0px 0px 22px 0px rgb(0 0 0 / 20%);
+    padding-bottom: 30px;
+}
+.table-head {
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/table-frame.webp) no-repeat bottom center;
+    /* background: var(--theme-gradient1); */
+    padding: 50px 30px 30px 30px;
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 40px 30px 30px 30px;
+    text-align: center;
+    min-height: 250px;
+}
+/* .table-list li:nth-child(odd) {
+    background-color: #F6EFFF !important;
+} */
+.table-list li {
+    background: url(https://cdn.oppyotest.com/launches/shortbeastai/special/tick.webp) no-repeat;
+    list-style: none;
+    text-align: left;
+    padding: 15px 15px 15px 50px;
+    background-position: 18px 20px;
+    line-height: 150%;
+    text-transform: capitalize;
+    /* border-bottom: 1px solid #5d5d55; */
+}
+.table-list li:nth-last-child(2){
+    padding-bottom: 20px;
+}
+.table-list li.headline {
+    background: var(--theme-clr);
+    padding: 26px 0px 20px 0px;
+    background-position: 0px 18px;
+    list-style: none;
+    margin: 0px;
+    border-bottom: none !important;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+a.cta-link-btn {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 22px;
+    line-height: 160%;
+    color: #000000;
+    font-weight: 800;
+    transition: all .3s ease;
+    background: var(--theme-gradient);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    /* border: 5px solid rgba(255, 255, 255, 0.30); */
+}
+a.cta-link-btn:hover {
+    border-radius: 8px;
+    /* background: var(--theme-gradient1); */
+    color: #000000;
+}
+a.cta-link-btn::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
+    background: linear-gradient(90deg, #FEA601 11.56%, #FDF700 90%);
+    color: #000;
+    border-radius: 0 0 40% 35%;
+}
+.table-btn {
+    padding: 30px 20px;
+    text-align: center;
+}
+.table-border-content {
+    background: #fff;
+    border: 3px dashed #999;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+.tb-check {
+    background: #FEFE9B;
+    padding: 18px 18px 18px 10px;
+}
+.table-img{
+    margin-top: -190px;
+    
+}
+.table-img img{
+    width: 60%;
+}
+@media (min-width: 768px) {
+    .pricing-section {
+        background: #000000 url("https://cdn.oppyotest.com/launches/shortbeastai/special/slider-bg.webp") no-repeat top center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .table-wrap {
+        padding-bottom: 100px;
+        border: 8px solid #ffffff33;
+    }
+    .table-head {
+        padding: 60px 30px 20px 30px;
+        text-align: center;
+        min-height: 550px;
+    }
+    .table-list li {
+        padding: 20px 96px 0px 133px;
+        background-position: 97px 25px;
+    }
+    a.cta-link-btn {
+        font-size: 37px;
+        padding: 22px 75px;
+        display: inline-block;
+    }
+    .table-border-content {
+        max-width: 75%;
+    }
+    .f-md-80 {
+        font-size: 80px;
+    }
+    .f-md-55 {
+        font-size: 55px;
+    }
+    .f-md-70 {
+        font-size: 70px;
+    }
+    .f-md-100 {
+        font-size: 100px;
+    }
+}
+/* pricing tabel end */
+
+/* inside sec start */
+.inside-section {
+    background: #ffffff;
+}
+
+/* inside sec end */
+
+/* footer start */
+.footer-section {
+    background: #000000;
+    padding: 30px 0px;
+}
+.footer-ul {
+    padding: 0px;
+    margin: 0px;
+}
+.footer-ul li {
+    display: inline;
+}
+.footer-ul .t-decoration-none:hover {
+    color: #fff;
+}
+@media(min-width:768px) {
+    .footer-section {
+        padding: 70px 0px;
+    }
+}
+
+/* footer end */
+
+
+@media (min-width: 768px) {
+    .f-md-80 {
+        font-size: 80px;
+    }
+}
+/*  */
+
+
+
+
+
+/* slider up start */
+.bx-wrapper {
+    border: 0px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    max-width: auto !important;
+}
+.bx-viewport {
+    position: relative !important;
+}
+.bxslider {
+    background: transparent !important;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: 0px !important;
+    font-weight: 800;
+    position: relative;
+}
+.bxslider li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 76px;
+    line-height: 32px;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .bxslider li {
+        justify-content: center;
+        min-width: 100%;
+        float: left !important;
+        width: auto !important;
+    }
+}
+/* slider up end */
+
+/* first-slider start */
+.slider-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.slider-track-1, .slider-track-2, .slider-track-3 {
+    display: flex;
+    gap: 20px;
+    animation: slide 20s linear infinite;
+    width: max-content;
+}
+
+.slider-container:hover .slider-track-1, .slider-container:hover .slider-track-2, .slider-container:hover .slider-track-3 {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-50%);
+    }
+}
+.slide {
+    flex: 0 0 auto;
+    width: auto;
+    height: 550px;
+    border-radius: 0px;
+    overflow: hidden;
+    /* background: #000; */
+    transition: transform 0.3s ease;
+    position: relative;
+    /* background: #8F77FD1A; */
+    /* padding: 10px; */
+    /* border: 1px solid #8F77FD4D; */
+}
+
+.slide:hover {
+    /* transform: scale(1.05); */
+    z-index: 10;
+    position: relative;
+}
+
+.slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Duplicate slides for seamless loop */
+.slider-track-1, .slider-track-2, .slider-track-3 {
+    padding-left: 20px;
+}
+@media (max-width: 767px) {
+    .slide {
+        width: 280px !important;
+        height: 450px;
+        margin: auto;
+    }
+    .slider-container {
+        height: 450px;
+    }
+}
+/* first-slider end */
+
+
+/* video css start */
+    video {
+      width: 100%;
+      display: block;
+    }
+    .mute-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        background: var(--theme-clr);
+        color: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    .mute-btn i {
+      pointer-events: none;
+      animation: blink 1.2s linear infinite;
+    }
+    @keyframes blink {
+    0%{
+        /* color: #000000; */
+        opacity: 0;
+    }  
+    100%{
+        /* color: #ffffff; */
+        opacity: 1;
+    }
+}
+/* video css end */
+
+/* swiper css start */
+.swiper {
+    width: 100%;
+    /* padding: 20px; */
+    overflow: hidden;
+}
+.swiper-wrapper {
+    transition-timing-function: ease-in-out !important;
+}
+.swiper-slide {
+    /* background: #005fbd; */
+    background: transparent;
+    border-radius: 10px;
+    /* padding: 20px; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.9s ease;
+    will-change: transform, opacity;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    height: 0% !important;
+}
+.photo-border, .animal-border, .vertical-border {
+    height: 100%;
+}
+.photo-border {
+    border-radius: 20px;
+    border: double 5px transparent;
+    background-image: linear-gradient(#fff, #fff), var(--theme-clr);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.swiper:hover .swiper-wrapper {
+    animation-play-state: paused;
+}
+
+/* swiper-button start */
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    min-height: 20px !important;
+    width: 20px !important;
+    background: var(--theme-clr);
+    color: #fff;
+    border-radius: 50%;
+    padding: 12px 23px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 22px !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset,15px) !important;
+    left: auto;
+}
+/* .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset,15px) !important;
+    right: auto;
+} */
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset,8px) !important;
+    right: auto;
+}
+/* .swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    bottom: -45px !important;
+} */
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset,113%) !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -70px !important;
+    top: var(--swiper-pagination-top,auto);
+    left: 0;
+    width: 100%;
+}
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: linear-gradient(284.33deg, #fd22225f 1.91%, #fdc86769 100.57%) !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--theme-clr) !important;
+}
+@media (min-width:768px) {
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: 31px !important;
+        text-transform: none!important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        min-height: 50px !important;
+        width: 50px !important;
+        background: var(--theme-clr);
+        color: #fff;
+        border-radius: 50% !important;
+        padding: 14px 31px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900 !important;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: var(--swiper-navigation-top-offset,50%) !important;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset,-9px) !important;
+        left: auto;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset,-9px) !important;
+        right: auto;
+    }
+
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 15px !important;
+        background: var(--theme-clr) !important;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -50px !important;
+    }
+}
+/* swiper css end */
